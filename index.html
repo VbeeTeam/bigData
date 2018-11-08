@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大数据可视化窗口</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <div class="section_left">
+        <div class="left_number">
+            <p>//当前对比数据//</p>
+            <h1>3,456,789</h1>
+        </div>
+        <div class="right_title">
+            <h3>违法犯罪人员分析</h3>
+        </div>
+        <div class="left_analyze" id="sin_analyze">
+        </div>
+        <div class="right_title">
+            <h3>人口出入记录</h3>
+        </div>
+        <table bordercolor="#0e94ea" border="1" cellpadding="0" cellspacing="0">
+            <tr align="center" height="40px"><td>姓名</td><td>角色</td><td>开门方式</td><td>时间</td></tr>
+            <tr align="center" height="75px">
+                <td width="135px">张梦</td>
+                <td width="135px">访客</td>
+                <td width="135px">人脸</td>
+                <td width="135px"><span>2018-11-01</span><span>13:51:23</span></td>
+            </tr>
+            <tr align="center" height="75px">
+                <td>李阳荣</td>
+                <td>业主</td>
+                <td>APP</td>
+                <td><span>2018-11-01</span><span>13:51:23</span></td>
+            </tr>
+            <tr align="center" height="75px">
+                <td>张无双</td>
+                <td>访客</td>
+                <td>人脸</td>
+                <td><span>2018-11-01</span><span>13:51:23</span></td>
+            </tr>
+            <tr align="center" height="75px">
+                <td>李阳</td>
+                <td>业主</td>
+                <td>APP</td>
+                <td><span>2018-11-01</span><span>13:51:23</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="section_middle">
+        <div class="middle_top">
+            <img src="img/jinghui.png"/>
+            <h1>智慧社区内网比对平台</h1>
+        </div>
+        <div class="middle_weather">
+            <div class="weather_left">
+                <h1>20:17:05</h1>
+                <p>2018/11/7<span>pm</span><span>周二</span></p>
+            </div>
+            <div class="weather_right">
+                <h3>NO.1北京:2543289人</h3>
+                <h3>NO.1天津:5690人</h3>
+                <h3>NO.1河北:456人</h3>
+            </div>
+        </div>
+        <p class="middle_sinp">犯罪人口来源分析</p>
+        <div class="middle_map" id="china_map">
+        </div>
+
+    </div>
+    <div class="section_right">
+        <div class="right_title">
+            <h3>违法犯罪人员年龄分布</h3>
+        </div>
+        <p>单位：岁</p>
+        <div class="right_age" id="sin_age">
+        </div>
+        <div class="right_title">
+            <h3>违法犯罪人员年龄分布</h3>
+        </div>
+        <div class="right_region" id="sin_region">
+        </div>
+        <div class="right_title">
+            <h3>人口出入时间段统计</h3>
+        </div>
+        <div class="right_time" id="sin_time">
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript" src="js/sinage.js"></script>
+<script type="text/javascript" src="js/region.js"></script>
+<script type="text/javascript" src="js/sintime.js"></script>
+<script type="text/javascript" src="js/sinanalyze.js"></script>
+<script type="text/javascript" src="js/sinmap.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
